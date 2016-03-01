@@ -1,0 +1,65 @@
+﻿@model Hnatyshyn.Nazar._5I.SitoPersonale.Models.Dettagli
+
+@{
+    ViewBag.Title = "Dettagli";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="container">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Materia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Materia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titolo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titolo)
+        </dd>
+
+        <dt>
+            Descrizione
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescrizioneLunga)
+        </dd>
+
+        <dt></dt><dd></dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+
+        <dd>
+            @{string islinknull = ""; }
+            @if (@Model.Link == "_LINK_")
+            {
+                islinknull = "disabled";
+            }
+            <a href="@Html.DisplayFor(model => model.Link)" class="btn btn-success @islinknull" target="_blank">Link diretto</a>
+        </dd>
+
+    </dl>
+    <hr />
+    <p>
+        @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+

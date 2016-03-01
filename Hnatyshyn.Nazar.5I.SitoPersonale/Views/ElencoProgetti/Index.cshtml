@@ -1,0 +1,61 @@
+﻿@using Hnatyshyn.Nazar._5I.SitoPersonale.Models;
+@model Autore
+
+@{
+    ViewBag.Title = "Elenco Progetti";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h1 class="text-center">Autore: @Model.Cognome @Model.Nome</h1>
+    @foreach (Materia M in Model.Materie)
+    {
+        <div class="table">
+            Materia: @M.NomeMateria
+            <table class="table table-hover table-responsive">
+                <tr class="info">
+                    <th width="12%">Data</th>
+                    <th width="15%">Titolo</th>
+                    <th>Descrizione</th>
+                    <th width="1%">Dettagli</th>
+                    <th width="1%">Link</th>
+                </tr>
+                @foreach (Progetto P in M.Progetti)
+                {
+                    string islinknull = "";
+                    string classParam = "";
+                    if (P.DescrizioneCorta.ToLower().Contains("progetto corrente"))
+                    {
+                        classParam += " danger";
+                    }
+                    <tr class="@classParam">
+                        <td>@P.Data</td>
+                        <td>@P.Titolo</td>
+                        <td>@P.DescrizioneCorta</td>
+                        <td>@Html.ActionLink("Info", "Details",
+                           new
+                           {
+                               materia = M.NomeMateria,
+                               data = P.Data,
+                               titolo = P.Titolo,
+                               descrizioneCorta = P.DescrizioneCorta,
+                               descrizioneLunga = P.DescrizioneLunga,
+                               link = P.Link
+
+                           }, new { @class = "btn btn-info" })</td>
+                        @if (@P.Link == "_LINK_")
+                        {
+                            islinknull = "disabled";
+                        }
+                        <td><a href="@P.Link" target="_blank" class="btn btn-success @islinknull">Source</a></td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <br />
+    }
+    <div class="modal-footer">
+        <a href="~/Content/ElencoProgetti.xml" target="_blank" class="btn btn-warning">File XML</a>
+    </div>
+</div>

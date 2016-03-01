@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Hnatyshyn Nazar</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="../../Content/main.css" />
+</head>
+
+<body id="top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Nazar Hnatyshyn", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    @*<li>@Html.ActionLink("Text", "View", "Controller")</li>*@
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Elenco Progetti", "Index", "ElencoProgetti")</li>
+                    <li><a class="active" href="http://sitodeisiti5i.gear.host/">Sito della classe</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        @RenderBody()
+    </div>
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="http://nhnatyshyn.gear.host/" class="icon fa-gear"><span class="label">GearHost</span></a></li>
+            <li><a href="https://github.com/Vanguard-Fx" class="icon fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/nazar-hnatyshyn-a238a3108?trk=hp-identity-name" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        <p class="copyright">&copy; 2016 -  Hnatyshyn Nazar</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sito>
+  <autore Nome="Nazar" Cognome="Hnatyshyn" Immagine="Foto.jpg">
+    <progetti Materia="INF">
+    	<!--
+	      <progetto Data="_DATA_" Titolo="_TITOLO_" DescrizioneCorta="_DESC_" DescrizioneLunga="_DESC_" Link="_LINK_">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	        <tag Tipo="Linguaggio">ASP.NET</tag>
+	        <tag Tipo="Linguaggio">XML</tag>
+	        <tag Tipo="Linguaggio">JSON</tag>
+	      </progetto>
+	  	-->
+	  	<progetto Data="25/02/2015" Titolo="ElencoProgetti" DescrizioneCorta="La vecchia versione del progetto corrente" DescrizioneLunga="
+			Realizzare un sito Web che elenchi in una tabella tutti i progetti consegnati in .ZIP 
+
+			Il file XML deve contenere i campi
+
+			    Data Progetto, 
+
+			Materia (TPI, Sistemi, Informatica, Matematica...) 
+
+			Nome e Cognome, 
+
+			Titolo progetto, 
+
+			Descrizione corta, 
+
+			Descrizione lunga,
+
+			Foto, 
+
+			Link progetto
+
+
+			Nel progetto deve sempre essere presente 
+
+			una cartella Content\Images
+
+			dentro a tale cartella prevedere una Foto.jpg dell’autore del sito
+
+			verificare la presenza della foto in http://sitodeisiti5i.gear.host/
+
+
+			Pubblicare sempre su Gear.host e consegnare i sorgenti in drive
+			" Link="https://drive.google.com/file/d/0B90RW9yiXk4OQ045cVhJVmNpNVk/view?usp=sharing">
+	        <tag Tipo="Linguaggio">ASP.NET</tag>
+	   	</progetto>
+
+	    <progetto Data="23/02/2016" Titolo="GearHostTest" DescrizioneCorta="Primo progetto pubblicato su GearHost" DescrizioneLunga="
+			Realizzare un sito Web che elenchi in una tabella una serie di oggetti Cliente simile a questo (magari più bello) http://5i16.gear.host/ e pubblicarlo su GearHost
+
+
+			Per il 23/2/2016 ore 21.00
+
+			Aggiungere una cartella Images dentro alla cartella Content
+
+			Aggiungere quindi nella cartella Content/images una Foto.jpg dell’autore del sito
+
+			Aggiungere un pulsante visualizza dettagli su ogni riga
+
+
+			Per il 1/3/2016 ore 21.00
+
+			Modificare il file XML, in modo che contenga l’elenco dei propri progetti:
+
+			    Nome e Cognome, Titolo progetto, Descrizione corta, Descrizione lunga, Link progetto
+
+
+			Pubblicare sempre su Gear.host e consegnare i sorgenti in drive
+
+			Salvare tutto nella propria cartella drive
+			" Link="https://drive.google.com/file/d/0B90RW9yiXk4OWnVKV3MxSERLZ0U/view?usp=sharing">
+	        <tag Tipo="Linguaggio">ASP.NET</tag>
+	   	</progetto>
+	    <progetto Data="20/01/2015" Titolo="Aziende1" DescrizioneCorta="Realizzare delle query sul DataBase Aziende" DescrizioneLunga="Realizzare delle query sul DataBase Aziende" Link="https://drive.google.com/file/d/0B90RW9yiXk4OcHN6TzI4bTlFM1E/view?usp=sharing">
+	        <tag Tipo="Linguaggio">Query</tag>
+	      </progetto>
+      	<progetto Data="09/12/2015" Titolo="QueryInsiemistiche" DescrizioneCorta="Realizzare delle query insiemistiche" DescrizioneLunga="Realizzare delle query insiemistiche" Link="https://drive.google.com/file/d/0B90RW9yiXk4OaVZUbjVYZUpYZEU/view?usp=sharing">
+	        <tag Tipo="Linguaggio">Query</tag>
+	    </progetto>
+	    <progetto Data="18/11/2015" Titolo="SostituzioniCSV" DescrizioneCorta="Preleva i dati da 	un file Sostituzioni.csv e li visualizza" DescrizioneLunga="
+	    	Utilizzando il file Sostituzioni.csv, allegato, realizzare un programma che prelevi i dati e li visualizzi in una DataGrid.
+
+			Il programma inoltre deve consentire prevedere un pulsante Aggiungi e un pulsante Salva" Link="https://drive.google.com/file/d/0B90RW9yiXk4ONG5RcXZvc1daMWs/view?usp=sharing">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	        <tag Tipo="Linguaggio">CSV</tag>
+	    </progetto>
+      	<progetto Data="18/11/2015" Titolo="Anagrafica" DescrizioneCorta="Prelevi i dati da un file ListaAlunni.txt allegato al presente esercizio" DescrizioneLunga="
+      		Prelevi i dati da un file ListaAlunni.txt allegato al presente esercizio, 
+
+			•lo visualizzi in una DataGrid 
+
+			•consenta di verificare che i record siano integri
+
+			•verifichi l’integrità verticale del campo “Codice”" Link="https://drive.google.com/file/d/0B90RW9yiXk4OeUR6aFJkX29hLUE/view?usp=sharing">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	        <tag Tipo="Linguaggio">CSV</tag>
+	    </progetto>
+   	</progetti>
+
+	<progetti Materia="TPI">
+		<progetto Data="26/02/2016" Titolo="SitoPersonale" DescrizioneCorta="Il progetto corrente" DescrizioneLunga="
+			Descrizione: Realizzare un progetto Web con Asp.NET MVC che:
+			- Abbia una landing page iniziale dove sono presenti:
+			- La foto personale (o un avatar stilizzato) 
+			- Un po’ di dati personali (Nome, Cognome etc)
+			- Un link alla pagina dei propri progetti
+			- La pagina con l’elenco dei progetti
+			- Prevedere un menu sulla landing page
+			" Link="https://drive.google.com/open?id=0B90RW9yiXk4OZTRtZi1HYVNnLTg">
+	        <tag Tipo="Linguaggio">ASP.NET</tag>
+	        <tag Tipo="Linguaggio">XML</tag>
+	      </progetto>
+	    <progetto Data="21/01/2016" Titolo="RSSFeed" DescrizioneCorta="Lettura di un file xml dai diversi giornali" DescrizioneLunga=" 
+			(15/1/2016) modelli un item RSSItem con almeno le proprietà titolo, descrizione, data di pubblicazione 
+
+
+			•(15/1/2016) legga l’intero RSS da 
+			http://www.ilmattino.it/rss/economia.xml
+
+
+			•(15/1/2016) Visualizzi tutti gli RSSitems In una griglia
+
+
+			•(15/1/2016) Visualizzi il titolo del giornale e la data di pubblicazione
+
+
+			•Andare a prendere ANCHE altri giornali come
+			http://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml
+
+
+			•(22/1/2016) cliccando su una riga della griglia, Visualizzi i dettagli del feed:
+
+
+			•Immagine
+
+
+			•Titolo
+
+
+			•Descrizione
+
+			•Data Pubblicazione
+			" Link="https://drive.google.com/file/d/0B90RW9yiXk4OYmxaR1dwYU1NWk0/view?usp=sharing">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	    </progetto>
+
+	    <progetto Data="09/12/2015" Titolo="ProgettoTPI" DescrizioneCorta="Gioco Arkanoid" DescrizioneLunga="Gioco da realizzare in SIR" Link="https://drive.google.com/file/d/0B90RW9yiXk4OaVZUbjVYZUpYZEU/view?usp=sharing">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	    </progetto>
+      	<progetto Data="08/12/2015" Titolo="Mobili" DescrizioneCorta="Visualizzi in una griglia tutti gli elementi del file fornito" DescrizioneLunga="
+  		Modelli un Mobile da arredamento con almeno i campi Marca, Modello, Foto, Prezzo, Tipo (Non specificato, Giardino, Spiaggia, Bagno, Cantina)
+
+
+		•Acquisire un file Mobili.txt fornito
+
+
+		•Visualizzi in una griglia tutti gli elementi del file fornito
+
+
+		•Prevedere un pulsante Add che apra una form (oppure chieda direttamente) i dati richiesti
+
+
+		•Prevedere un pulsante Salva
+
+
+		•11/12/2015 - Trasformare il programma in modalità asincrona (con async e await)" Link="https://drive.google.com/file/d/0B90RW9yiXk4OS1lYSnYwVFB0Qms/view?usp=sharing">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	      </progetto>
+    </progetti>
+  </autore>
+</sito>
