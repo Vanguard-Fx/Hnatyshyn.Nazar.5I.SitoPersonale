@@ -2708,6 +2708,10 @@
 
 	.panel-title > a {
 		padding: 10px 15px;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: left;
+		cursor:pointer;
 	}
 
 	.btn-block:after {
