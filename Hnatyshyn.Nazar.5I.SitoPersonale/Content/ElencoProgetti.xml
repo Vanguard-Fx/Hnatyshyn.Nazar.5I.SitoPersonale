@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <sito>
   <autore Nome="Nazar" Cognome="Hnatyshyn" Immagine="Foto.jpg">
-    <progetti Materia="INF">
+    <progetti Materia="Informatica">
     	<!--
 	      <progetto Data="_DATA_" Titolo="_TITOLO_" DescrizioneCorta="_DESC_" DescrizioneLunga="_DESC_" Link="_LINK_">
 	        <tag Tipo="Linguaggio">WPF</tag>
@@ -168,5 +168,19 @@
 	        <tag Tipo="Linguaggio">WPF</tag>
 	      </progetto>
     </progetti>
+	<progetti Materia="Sistemi e Reti">
+		<progetto Data="08/01/2016" Titolo="Agenda" DescrizioneCorta="Gestione di un agenda" DescrizioneLunga="Lettura e scrittura del file con diversi campi e la loro visualizzazione tramite vettori" Link="https://drive.google.com/open?id=0B90RW9yiXk4OZEY2dmczUFE1clk">
+		<tag Tipo="Linguaggio">PHP</tag>
+		</progetto>
+	</progetti>
+	<progetti Materia="Matematica">
+		<progetto Data="16/02/2016" Titolo="CalcoloAreaTrapezoide" DescrizioneCorta="Calcolo dell area del trapezoide con integrali" DescrizioneLunga="Calcolo dell'area del trapezoide con tre metodi diversi: 
+		- Rettangoli
+		- Trapezi 
+		- Parabole
+		Con il relativo grafico della funzione" Link="https://drive.google.com/file/d/0B90RW9yiXk4OeDk0czBCUlZhT3c/view?usp=sharing">
+		<tag Tipo="Linguaggio">WPF</tag>
+		</progetto>
+	</progetti>
   </autore>
 </sito>

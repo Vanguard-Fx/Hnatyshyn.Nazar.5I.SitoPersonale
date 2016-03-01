@@ -2686,6 +2686,40 @@
 		border-top-color: #e6e6e6;
 	}
 
+
+/* Panel */
+	.panel-heading {
+		padding: 0;
+		background-color: #f7f7f7;
+	}
+
+	.panel-heading:hover {
+		padding: 0;
+		background-color: #f2f2f2;
+	}
+	.panel-heading:active {
+		padding: 0;
+		background-color: #f2f2f2;
+	}
+	.panel-heading:focus {
+		padding: 0;
+		background-color: #f2f2f2;
+	}
+
+	.panel-title > a {
+		padding: 10px 15px;
+	}
+
+	.btn-block:after {
+		font-family: FontAwesome;
+		content: "\f077";
+		float: left;
+		margin-right: 15px;
+	}
+	.btn-block.collapsed:after {
+		content: "\f078";
+	}
+
 /* Section/Article */
 
 	section.special, article.special {

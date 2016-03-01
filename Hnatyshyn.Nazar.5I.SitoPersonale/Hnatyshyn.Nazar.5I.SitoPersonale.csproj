@@ -107,7 +107,7 @@
   <ItemGroup>
     <Content Include="Content\ElencoProgetti.xml">
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\Foto.jpg">
@@ -129,7 +129,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\main.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Images\pic01.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
