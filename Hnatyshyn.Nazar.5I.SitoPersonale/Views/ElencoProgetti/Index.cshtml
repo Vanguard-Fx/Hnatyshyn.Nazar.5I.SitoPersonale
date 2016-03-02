@@ -11,16 +11,16 @@
     <h1 class="text-center">Autore: @Model.Cognome @Model.Nome</h1>
     @foreach (Materia M in Model.Materie)
     {
-        <div class="panel-group">
+        <div class="panel-group" id="myid">
 
             <div class="panel">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="btn-block scrolly collapsed" data-toggle="collapse" data-parent="#accordion" href="#@M.GetHashCode()"> @M.NomeMateria</a>
+                        <a class="btn-block scrolly collapsed" data-toggle="collapse" data-parent="#accordion" href="#@M.ID"> @M.NomeMateria</a>
                     </h4>
                 </div>
 
-                <div id="@M.GetHashCode()" class="panel-collapse collapse">
+                <div id="@M.ID" class="panel-collapse collapse">
                         <table class="table table-hover table-responsive" style="margin:0;">
                             <tr>
                                 <th width="12%">Data</th>
@@ -45,7 +45,8 @@
                                titolo = P.Titolo,
                                descrizioneCorta = P.DescrizioneCorta,
                                descrizioneLunga = P.DescrizioneLunga,
-                               link = P.Link
+                               link = P.Link,
+                               tags = P.Tags.ToList()
 
                            }, new { @class = "btn btn-info" })
                     </td>

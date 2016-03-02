@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <sito>
   <autore Nome="Nazar" Cognome="Hnatyshyn" Immagine="Foto.jpg">
-    <progetti Materia="Informatica">
+    <progetti IDMateria="1" Materia="Informatica" >
     	<!--
 	      <progetto Data="_DATA_" Titolo="_TITOLO_" DescrizioneCorta="_DESC_" DescrizioneLunga="_DESC_" Link="_LINK_">
 	        <tag Tipo="Linguaggio">WPF</tag>
@@ -98,7 +98,7 @@
 	    </progetto>
    	</progetti>
 
-	<progetti Materia="TPI">
+	<progetti IDMateria="2" Materia="TPI">
 		<progetto Data="26/02/2016" Titolo="SitoPersonale" DescrizioneCorta="Il progetto corrente" DescrizioneLunga="
 			Descrizione: Realizzare un progetto Web con Asp.NET MVC che:
 			- Abbia una landing page iniziale dove sono presenti:
@@ -168,12 +168,14 @@
 	        <tag Tipo="Linguaggio">WPF</tag>
 	      </progetto>
     </progetti>
-	<progetti Materia="Sistemi e Reti">
+
+	<progetti IDMateria="3" Materia="Sistemi e Reti">
 		<progetto Data="08/01/2016" Titolo="Agenda" DescrizioneCorta="Gestione di un agenda" DescrizioneLunga="Lettura e scrittura del file con diversi campi e la loro visualizzazione tramite vettori" Link="https://drive.google.com/open?id=0B90RW9yiXk4OZEY2dmczUFE1clk">
 		<tag Tipo="Linguaggio">PHP</tag>
 		</progetto>
 	</progetti>
-	<progetti Materia="Matematica">
+
+	<progetti IDMateria="4" Materia="Matematica">
 		<progetto Data="16/02/2016" Titolo="CalcoloAreaTrapezoide" DescrizioneCorta="Calcolo dell area del trapezoide con integrali" DescrizioneLunga="Calcolo dell'area del trapezoide con tre metodi diversi: 
 		- Rettangoli
 		- Trapezi 
@@ -182,5 +184,6 @@
 		<tag Tipo="Linguaggio">WPF</tag>
 		</progetto>
 	</progetti>
+	
   </autore>
 </sito>

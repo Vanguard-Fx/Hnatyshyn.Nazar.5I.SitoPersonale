@@ -12,7 +12,7 @@ namespace Hnatyshyn.Nazar._5I.SitoPersonale.Controllers
         // GET: ElencoProgetti
         public ActionResult Index()
         {
-            Autore autore = new Autore(Server.MapPath("~/Content/ElencoProgetti.xml"));
+            Autore autore = new Autore(Server.MapPath("~") + "/Content/ElencoProgetti.xml");
             return View(autore);
         }
 

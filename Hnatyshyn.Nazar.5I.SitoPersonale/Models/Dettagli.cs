@@ -8,5 +8,6 @@ namespace Hnatyshyn.Nazar._5I.SitoPersonale.Models
     public class Dettagli : Progetto
     {
         public string Materia { get; set; }
+        public int ID { get; set; }
     }
 }
