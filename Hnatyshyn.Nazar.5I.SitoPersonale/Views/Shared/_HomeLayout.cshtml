@@ -7,6 +7,13 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <script>
+    //MY JS
+    $(document).ready(function () {
+        $(window.location.hash).collapse('toggle');
+    });
+    </script>
+
     <link rel="stylesheet" href="../../Content/main.css" />
 </head>
 

@@ -5,14 +5,11 @@
     ViewBag.Title = "Elenco Progetti";
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
-
 <div class="container">
     <br />
     <h1 class="text-center">Autore: @Model.Cognome @Model.Nome</h1>
     @foreach (Materia M in Model.Materie)
     {
-        <div class="panel-group" id="myid">
-
             <div class="panel">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -60,7 +57,6 @@
                         </table>
                 </div>
             </div>
-        </div>
         <br />
 
         @*<div class="table">

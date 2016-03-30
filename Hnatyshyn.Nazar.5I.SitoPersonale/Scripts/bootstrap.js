@@ -2011,10 +2011,4 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     })
   })
 
-
-    //MY JS
-  $(document).ready(function () {
-      $(window.location.hash).collapse('toggle');
-  });
-
 }(window.jQuery);

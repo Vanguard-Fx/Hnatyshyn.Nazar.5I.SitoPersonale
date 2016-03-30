@@ -3,12 +3,12 @@
   <autore Nome="Nazar" Cognome="Hnatyshyn" Immagine="Foto.jpg">
     <progetti IDMateria="1" Materia="Informatica" >
     	<!--
-	      <progetto Data="_DATA_" Titolo="_TITOLO_" DescrizioneCorta="_DESC_" DescrizioneLunga="_DESC_" Link="_LINK_">
-	        <tag Tipo="Linguaggio">WPF</tag>
-	        <tag Tipo="Linguaggio">ASP.NET</tag>
-	        <tag Tipo="Linguaggio">XML</tag>
-	        <tag Tipo="Linguaggio">JSON</tag>
-	      </progetto>
+	    <progetto Data="_DATA_" Titolo="_TITOLO_" DescrizioneCorta="_DESC_" DescrizioneLunga="_DESC_" Link="_LINK_">
+	      <tag Tipo="Linguaggio">WPF</tag>
+	      <tag Tipo="Linguaggio">ASP.NET</tag>
+	      <tag Tipo="Linguaggio">XML</tag>
+	      <tag Tipo="Linguaggio">JSON</tag>
+	    </progetto>
 	  	-->
 	  	<progetto Data="25/02/2015" Titolo="ElencoProgetti" DescrizioneCorta="La vecchia versione del progetto corrente" DescrizioneLunga="
 			Realizzare un sito Web che elenchi in una tabella tutti i progetti consegnati in .ZIP 
@@ -45,7 +45,6 @@
 			" Link="https://drive.google.com/file/d/0B90RW9yiXk4OQ045cVhJVmNpNVk/view?usp=sharing">
 	        <tag Tipo="Linguaggio">ASP.NET</tag>
 	   	</progetto>
-
 	    <progetto Data="23/02/2016" Titolo="GearHostTest" DescrizioneCorta="Primo progetto pubblicato su GearHost" DescrizioneLunga="
 			Realizzare un sito Web che elenchi in una tabella una serie di oggetti Cliente simile a questo (magari più bello) http://5i16.gear.host/ e pubblicarlo su GearHost
 
@@ -111,6 +110,10 @@
 	        <tag Tipo="Linguaggio">ASP.NET</tag>
 	        <tag Tipo="Linguaggio">XML</tag>
 	      </progetto>
+	   	<progetto Data="19/02/2016" Titolo="XMLValidate" DescrizioneCorta="Validazione di un file XML con XSD" DescrizioneLunga="Validare un file xml con il corrispondente schema XSD" Link="https://drive.google.com/file/d/0B90RW9yiXk4OUHJWV1I0ejVfZVk/view?usp=sharing">
+	        <tag Tipo="Linguaggio">WPF</tag>
+	        <tag Tipo="Linguaggio">XML</tag>
+	    </progetto>
 	    <progetto Data="21/01/2016" Titolo="RSSFeed" DescrizioneCorta="Lettura di un file xml dai diversi giornali" DescrizioneLunga=" 
 			(15/1/2016) modelli un item RSSItem con almeno le proprietà titolo, descrizione, data di pubblicazione 
 

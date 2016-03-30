@@ -2,6 +2,12 @@
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
     ViewBag.Title = "Home";
 }
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.pubnub.com/pubnub-3.14.1.min.js"></script>
+    <link href="~/Content/slider.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
+</head>
 
 <!-- Header -->
 <header id="header">
@@ -36,26 +42,99 @@
 
 <!-- One -->
 <section id="one" class="wrapper style2 special">
-    <header class="major">
-        <h2>
-            SOME TEXT
-        </h2>
-    </header>
-    <ul class="icons major">
+    <div onload="RGBChange()" class="container">
+        <p>
+            <b>R</b>
+            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="1" data-slider-id="RC" id="R" />
+            <b id="RValue">0</b>
+        </p>
+        <p>
+            <b>G</b>
+            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="1" data-slider-id="GC" id="G" />
+            <b id="GValue">0</b>
+        </p>
+        <p>
+            <b>B</b>
+            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="1" data-slider-id="BC" id="B" />
+            <b id="BValue">0</b>
+        </p>
+        <p>
+            <button id="btn_succes" type="button" class="btn btn-lg">Send</button>
+            <a class="btn btn-lg btn-info" href="https://freeboard.io/board/FFw-ae">Freeboard</a>
+        </p>
+    </div>
+    <script type="text/javascript">
+    var r = 0, g = 0, b = 0;
+
+    var r = $('#R').slider()
+               .on('slide', function (slideEvt) { RGBChange(); $("#RValue").text(slideEvt.value); })
+               .data('slider');
+    var g = $('#G').slider()
+            .on('slide', function (slideEvt) { RGBChange(); $("#GValue").text(slideEvt.value); })
+            .data('slider');
+    var b = $('#B').slider()
+            .on('slide', function (slideEvt) { RGBChange(); $("#BValue").text(slideEvt.value); })
+            .data('slider');
+
+    var RGBChange = function () {
+        $('#btn_succes').css('background', 'rgb(' + r.getValue() + ',' + g.getValue() + ',' + b.getValue() + ')')
+    };
+
+    $('#btn_succes').click(function () {
+
+        var strCanale = "Faretto1";
+        var strPUB_KEY = 'pub-c-67c3fec1-3b6d-4b2b-a71c-2d33e67191d6';
+        var strSUB_KEY = 'sub-c-a342165c-e7c4-11e5-a027-0619f8945a4f';
+
+        var objCOMBINED_KEYS = { publish_key: strPUB_KEY, subscribe_key: strSUB_KEY }
+
+        // Registrazione a PubBub
+        var objPubnub = PUBNUB(objCOMBINED_KEYS);
+
+
+        objPubnub.subscribe({
+            channel: strCanale,
+            message: function (message, envelope, channelOrGroup, time, channel) {
+                console.log(
+                    "Message Received." + "\n" +
+                    "Channel or Group: " + JSON.stringify(channelOrGroup) + "\n" +
+                    "Channel: " + JSON.stringify(channel) + "\n" +
+                    "Message: " + JSON.stringify(message) + "\n" +
+                    "Time: " + time + "\n" +
+                    "Raw Envelope: " + JSON.stringify(envelope)
+                )
+            },
+            connect: pub
+        })
+
+        var objColore = { Red: r.getValue(), Green: g.getValue(), Blue: b.getValue() };
+
+        var objFaretto = {
+            channel: strCanale,
+            message: objColore,
+            callback: function (m) { console.log(m) }
+        };
+
+        function pub() {
+            objPubnub.publish(objFaretto);
+        }
+    });
+    </script>
+    @*<ul class="icons major">
         <li><span class="icon fa-camera-retro"><span class="label">Shoot</span></span></li>
         <li><span class="icon fa-refresh"><span class="label">Process</span></span></li>
         <li><span class="icon fa-cloud"><span class="label">Upload</span></span></li>
-    </ul>
+    </ul>*@
 </section>
 
 <!-- Two -->
 <section id="two" class="wrapper">
     <div class="inner alt">
-        <section class="spotlight">
+        @*<section class="spotlight">
             <div class="image"><img src="../../Content/Images/pic01.jpg" alt="" /></div>
             <div class="content">
                 <h2>
-		            SOME TEXT
+                    <a class="button" href="/ElencoProgetti#1">Informatica</a>
 		        </h2>
             </div>
         </section>
@@ -63,7 +142,7 @@
             <div class="image"><img src="../../Content/Images/pic02.jpg" alt="" /></div>
             <div class="content">
                 <h2>
-		            SOME TEXT
+                    <a class="button" href="/ElencoProgetti#1">TPI</a>
 		        </h2>
             </div>
         </section>
@@ -71,10 +150,10 @@
             <div class="image"><img src="../../Content/Images/pic03.jpg" alt="" /></div>
             <div class="content">
                 <h2>
-		            SOME TEXT
+                    <a class="button" href="/ElencoProgetti#1">SIR</a>
 		        </h2>
             </div>
-        </section>
+        </section>*@
         <section class="special">
             <ul class="icons labeled">
                 <li><span class="icon fa-camera-retro"><span class="label">Camera</span></span></li>
